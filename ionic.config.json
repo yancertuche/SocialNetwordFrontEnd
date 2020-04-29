@@ -1,0 +1,7 @@
+{
+  "name": "javered",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
