@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import './ExploreContainer.css';
+import './FormLogin.scss';
 
 export default class FormLogin extends Component {
     render() {
         return (
           <div className="container"> 
-            <img src='../' />
+            <div className='logo'>
+            <img src={'https://upload.wikimedia.org/wikipedia/commons/e/e8/PUJ-Logo-vertical.png'} alt='logo'></img>
+            </div>
             <form>
-                <h3>Ingresar - JaveRed</h3>
-                <h5>JaveRed, la plataforma para encontrar tus cursos favoritos</h5>
+                <h3 className="title">Iniciar sesión - JAVERED</h3>
+                <h5 className="title">¡Encuentra tus cursos favoritos!</h5>
 
                 <div className="form-group">
                     <input type="email" className="form-control" placeholder="Correo Institucional" />

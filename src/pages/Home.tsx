@@ -27,7 +27,7 @@ const Home: React.FC = () => {
             <IonTitle>JaveRed</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonContent>
+        <IonContent color='--ion-color-primary'>
           <IonHeader collapse="condense">
             <IonToolbar>
               <IonTitle size="large">JaveRed</IonTitle>
