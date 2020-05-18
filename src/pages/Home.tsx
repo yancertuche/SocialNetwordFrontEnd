@@ -24,10 +24,10 @@ const Home: React.FC = () => {
       <IonPage>
         <IonHeader>
           <IonToolbar>
-            <IonTitle>JaveRed</IonTitle>
+            <IonTitle >JaveRed</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonContent color='--ion-color-primary'>
+        <IonContent>
           <IonHeader collapse="condense">
             <IonToolbar>
               <IonTitle size="large">JaveRed</IonTitle>
