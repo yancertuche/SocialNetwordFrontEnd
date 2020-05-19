@@ -2,7 +2,12 @@ import React, { Component } from "react";
 import './ExploreContainer.css';
 import './FormLogin.scss';
 
+
+
 export default class FormLogin extends Component {
+    Principal = ()=>{
+        History.push('/feed');
+    }
     render() {
         return (
           <div className="container"> 
@@ -28,7 +33,7 @@ export default class FormLogin extends Component {
                     </div>
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-block">Iniciar sesión</button>
+                <button onClick={this.Principal} type="submit" className="btn btn-primary btn-block">Iniciar sesión</button>
 
                 <p className="forgot-password text-right">
                     ¿Olvidaste la Contraseña? <a href="#">Click Aqui</a>

@@ -1,10 +1,9 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonItem, IonMenu, IonList} from '@ionic/react';
 import React from 'react';
 //import ExploreContainer from '../components/ExploreContainer';
 import './Home.scss';
 //import ExploreContainer from '../components/ExploreContainer';
 import FormLogin from '../components/FormLogin';
-
 
 //Utilizar plugins
 import { Plugins } from '@capacitor/core';
