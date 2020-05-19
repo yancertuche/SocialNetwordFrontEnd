@@ -19,7 +19,6 @@ const Open = async () =>{
 
 const Home: React.FC = () => {
   return (
-    <div className="contenedorhome">
       <IonPage>
         <IonHeader>
           <IonToolbar>
@@ -35,7 +34,6 @@ const Home: React.FC = () => {
           <FormLogin></FormLogin>
         </IonContent>
       </IonPage>
-    </div>
   );
 };
 

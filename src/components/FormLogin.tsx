@@ -6,7 +6,6 @@ import './FormLogin.scss';
 
 export default class FormLogin extends Component {
     Principal = ()=>{
-        History.push('/feed');
     }
     render() {
         return (

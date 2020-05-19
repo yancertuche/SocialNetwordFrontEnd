@@ -3,7 +3,7 @@ import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem,
 
 const Menu: React.FC = () => {
     return(
-    <IonMenu side="start" content-id="main-content">
+    <IonMenu side="start" menuId="first" type="overlay" contentId="main">
       <IonHeader>
         <IonToolbar>
           <IonTitle>Menu</IonTitle>

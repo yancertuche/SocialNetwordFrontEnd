@@ -4,6 +4,7 @@ import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import Feed from './pages/Feed';
+import Menu from './components/Menu';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -29,7 +30,8 @@ import './theme/variables.css';
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet>
+      <Menu/>
+      <IonRouterOutlet id="main">
         <Route path="/home" component={Home} exact={true} />
         <Route exact path="/" render={() => <Redirect to="/home" />} />
         <Route path="/feed" component={Feed} exact={true} />

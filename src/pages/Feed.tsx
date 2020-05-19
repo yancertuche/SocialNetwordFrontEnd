@@ -4,7 +4,7 @@ import React from 'react';
 
 import Menu from'../components/Menu';
 
-const Home: React.FC = () => {
+const Feed: React.FC = () => {
   return (
     <div className="contenedorhome">
       <IonPage>
@@ -18,4 +18,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Feed;
