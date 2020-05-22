@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonItem, IonMenu, IonList} from '@ionic/react';
+import { IonContent, IonHeader, IonPage,  IonToolbar} from '@ionic/react';
 import React from 'react';
 const ProfileUser: React.FC = () => {
     return (
@@ -9,7 +9,7 @@ const ProfileUser: React.FC = () => {
             </IonToolbar>
           </IonHeader>
           <IonContent>
-            hola
+            perfil de Usuario
           </IonContent>
         </IonPage>
     );

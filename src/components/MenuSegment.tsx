@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonSegment, IonSegmentButton, IonLabel, IonIcon } from '@ionic/react';
+import {IonSegment, IonSegmentButton, IonIcon } from '@ionic/react';
 import { notifications, chatbox, people,addCircle,home } from 'ionicons/icons';
 import {useHistory} from 'react-router';
 
