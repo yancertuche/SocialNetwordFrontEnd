@@ -23,27 +23,30 @@ const Menu: React.FC = () => {
           <IonItem>
             <IonIcon icon={home} ></IonIcon>
             <IonLabel>Inicio</IonLabel>
-            <IonButton onClick={() => Principal('feed')} fill='clear'>
+            <IonButton onClick={() => Principal('principal')} fill='clear'>
               <IonIcon icon={arrowForward}></IonIcon>
             </IonButton>
           </IonItem>
           <IonItem>
             <IonIcon icon={addCircle} ></IonIcon>
             <IonLabel>Agregar Curso</IonLabel>
-            <IonButton onClick={() => Principal('courses')} fill='clear'>
+            <IonButton onClick={() => Principal('feed')} fill='clear'>
               <IonIcon icon={arrowForward}></IonIcon>
             </IonButton>
           </IonItem>
           <IonItem>
             <IonIcon icon={people} ></IonIcon>
             <IonLabel>Amigos</IonLabel>
-            <IonButton onClick={() => Principal('user')} fill='clear'>
+            <IonButton onClick={() => Principal('Friends')} fill='clear'>
               <IonIcon icon={arrowForward}></IonIcon>
             </IonButton>
           </IonItem>
           <IonItem>
           <IonIcon icon={chatbox}></IonIcon>
             <IonLabel>Mensajes</IonLabel>
+            <IonButton onClick={() => Principal('chat')} fill='clear'>
+              <IonIcon icon={arrowForward}></IonIcon>
+            </IonButton>
           </IonItem>
         </IonList>
       </IonContent>
