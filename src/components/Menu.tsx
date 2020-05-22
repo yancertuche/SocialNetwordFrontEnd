@@ -1,19 +1,31 @@
 import React from 'react';
-import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem,IonIcon,IonLabel, IonRouterOutlet } from '@ionic/react';
-
+import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem,IonIcon,IonLabel} from '@ionic/react';
+import { home, addCircle, people,chatbox} from 'ionicons/icons';
 const Menu: React.FC = () => {
     return(
     <IonMenu side="start" menuId="first" type="overlay" contentId="main">
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Menu</IonTitle>
+          <IonTitle>Menú</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <IonList>
           <IonItem>
-            <IonIcon name="mail" slot="start"></IonIcon>
-            <IonLabel>Inbox</IonLabel>
+            <IonIcon icon={home} ></IonIcon>
+            <IonLabel>Inicio</IonLabel>
+          </IonItem>
+          <IonItem>
+            <IonIcon icon={addCircle} ></IonIcon>
+            <IonLabel>Agregar Curso</IonLabel>
+          </IonItem>
+          <IonItem>
+            <IonIcon icon={people} ></IonIcon>
+            <IonLabel>Amigos</IonLabel>
+          </IonItem>
+          <IonItem>
+          <IonIcon icon={chatbox}></IonIcon>
+            <IonLabel>Mensajes</IonLabel>
           </IonItem>
         </IonList>
       </IonContent>

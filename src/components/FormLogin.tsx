@@ -1,13 +1,18 @@
 import React, { Component } from "react";
+import {useHistory} from 'react-router';
 import './ExploreContainer.css';
 import './FormLogin.scss';
 
 
 
-export default class FormLogin extends Component {
-    Principal = ()=>{
+const FormLogin : React.FC = ()=>{    
+    
+    const history= useHistory();
+    
+    const HandleSubmit = () =>{
+        console.log("llegue")
+        history.push('feed')
     }
-    render() {
         return (
           <div className="container"> 
             <div className='logo'>
@@ -32,13 +37,14 @@ export default class FormLogin extends Component {
                     </div>
                 </div>
 
-                <button onClick={this.Principal} type="submit" className="btn btn-primary btn-block">Iniciar sesión</button>
+                <button type='submit' onClick={HandleSubmit} className="btn btn-primary btn-block">Iniciar sesión</button>
 
                 <p className="forgot-password text-right">
-                    ¿Olvidaste la Contraseña? <a href="#">Click Aqui</a>
+                    ¿Olvidaste la Contraseña? <a href="https://google.com">Click Aqui</a>
                 </p>
             </form>
           </div>
-        );
-    }
+        )
 }
+
+export default FormLogin;

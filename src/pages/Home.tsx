@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonItem, IonMenu, IonList} from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/react';
 import React from 'react';
 //import ExploreContainer from '../components/ExploreContainer';
 import './Home.scss';
@@ -20,17 +20,12 @@ const Open = async () =>{
 const Home: React.FC = () => {
   return (
       <IonPage>
-        <IonHeader>
+        <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle >JaveRed</IonTitle>
+            <IonTitle size="large">JaveRed</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent>
-          <IonHeader collapse="condense">
-            <IonToolbar>
-              <IonTitle size="large">JaveRed</IonTitle>
-            </IonToolbar>
-          </IonHeader>
           <FormLogin></FormLogin>
         </IonContent>
       </IonPage>
