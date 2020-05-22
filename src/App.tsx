@@ -26,6 +26,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import ProfileUser from './pages/ProfileUser';
+import ProfileCourse from './pages/ProfileCourse';
 
 const App: React.FC = () => (
   <IonApp>
@@ -33,8 +35,10 @@ const App: React.FC = () => (
       <Menu/>
       <IonRouterOutlet id="main">
         <Route path="/home" component={Home} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/home" />} />
         <Route path="/feed" component={Feed} exact={true} />
+        <Route path="/user" component={ProfileUser} exact={true} />
+        <Route path="/courses" component={ProfileCourse} exact={true} />
+        <Route exact path="/" render={() => <Redirect to="/home" />} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

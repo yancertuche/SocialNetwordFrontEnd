@@ -1,11 +1,18 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonSegment, IonSegmentButton, IonLabel, IonIcon } from '@ionic/react';
 import { notifications, chatbox, people,addCircle,home } from 'ionicons/icons';
+import {useHistory} from 'react-router';
 
 const MenuSegment: React.FC = () => {
+  const history= useHistory();
+    
+  const Principal = (Page : any) =>{
+      console.log(Page)
+      history.push(Page)
+  }
   return (
-          <IonSegment onIonChange={e => console.log('Segment selected', e.detail.value)}>
-            <IonSegmentButton value="notifications">
+          <IonSegment onIonChange={e => Principal( e.detail.value)}  >
+            <IonSegmentButton  value="notification1">
               <IonIcon icon={notifications} />
             </IonSegmentButton>
             <IonSegmentButton value="chatbox">
@@ -14,7 +21,7 @@ const MenuSegment: React.FC = () => {
             <IonSegmentButton value="people">
               <IonIcon icon={people} />
             </IonSegmentButton>
-            <IonSegmentButton value="addCircle">
+            <IonSegmentButton value="feed">
               <IonIcon icon={addCircle} />
             </IonSegmentButton>
             <IonSegmentButton value="home">
