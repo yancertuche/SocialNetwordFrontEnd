@@ -37,7 +37,7 @@ const Menu: React.FC = () => {
           <IonItem>
             <IonIcon icon={people} ></IonIcon>
             <IonLabel>Amigos</IonLabel>
-            <IonButton onClick={() => Principal('Friends')} fill='clear'>
+            <IonButton onClick={() => Principal('friends')} fill='clear'>
               <IonIcon icon={arrowForward}></IonIcon>
             </IonButton>
           </IonItem>

@@ -11,7 +11,7 @@ const FormLogin : React.FC = ()=>{
     
     const HandleSubmit = () =>{
         console.log("llegue")
-        history.push('feed')
+        history.push('principal')
     }
         return (
           <div className="container"> 

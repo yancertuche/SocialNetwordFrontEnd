@@ -1,22 +1,102 @@
 import React from 'react';
 import {  IonList, IonItem,IonIcon,IonLabel, IonListHeader, IonAvatar} from '@ionic/react';
-import { home, addCircle, people,chatbox, arrowForward} from 'ionicons/icons';
+import { home, addCircle, people,chatbox, arrowForward, personCircle} from 'ionicons/icons';
 import {useHistory} from 'react-router';
 
 const FriendsList: React.FC = () => {
     return (
     <IonList>
         <IonListHeader>
-          Recent Conversations
+          Mis amigos
         </IonListHeader>
         <IonItem>
             <IonAvatar slot="start">
-                <IonIcon icon={people}></IonIcon>
+                <IonIcon icon={personCircle}></IonIcon>
             </IonAvatar>
             <IonLabel>
-                <h2>Finn</h2>
-                <h3>I'm a big deal</h3>
-                <p>Listen, I've had a pretty messed up day...</p>
+                <h2>Yan Carlos Certuche</h2>
+                <h3>Soy divertido</h3>
+                <p>Me gusta Escuchar música todo el tiempo</p>
+            </IonLabel>
+        </IonItem>
+        <IonItem>
+            <IonAvatar slot="start">
+                <IonIcon icon={personCircle}></IonIcon>
+            </IonAvatar>
+            <IonLabel>
+                <h2>Anderson Laverde</h2>
+                <h3>Soy divertido</h3>
+                <p>Me gusta Escuchar música todo el tiempo</p>
+            </IonLabel>
+        </IonItem>
+        <IonItem>
+            <IonAvatar slot="start">
+                <IonIcon icon={personCircle}></IonIcon>
+            </IonAvatar>
+            <IonLabel>
+                <h2>Santiago Coca</h2>
+                <h3>Soy divertido</h3>
+                <p>Me gusta Escuchar música todo el tiempo</p>
+            </IonLabel>
+        </IonItem>
+        <IonItem>
+            <IonAvatar slot="start">
+                <IonIcon icon={personCircle}></IonIcon>
+            </IonAvatar>
+            <IonLabel>
+                <h2>Yan Carlos Certuche</h2>
+                <h3>Soy divertido</h3>
+                <p>Me gusta Escuchar música todo el tiempo</p>
+            </IonLabel>
+        </IonItem>
+        <IonItem>
+            <IonAvatar slot="start">
+                <IonIcon icon={personCircle}></IonIcon>
+            </IonAvatar>
+            <IonLabel>
+                <h2>Anderson Laverde</h2>
+                <h3>Soy divertido</h3>
+                <p>Me gusta Escuchar música todo el tiempo</p>
+            </IonLabel>
+        </IonItem>
+        <IonItem>
+            <IonAvatar slot="start">
+                <IonIcon icon={personCircle}></IonIcon>
+            </IonAvatar>
+            <IonLabel>
+                <h2>Santiago Coca</h2>
+                <h3>Soy divertido</h3>
+                <p>Me gusta Escuchar música todo el tiempo</p>
+            </IonLabel>
+        </IonItem>
+        <IonItem>
+            <IonAvatar slot="start">
+                <IonIcon icon={personCircle}></IonIcon>
+            </IonAvatar>
+            <IonLabel>
+                <h2>Yan Carlos Certuche</h2>
+                <h3>Soy divertido</h3>
+                <p>Me gusta Escuchar música todo el tiempo</p>
+            </IonLabel>
+        </IonItem>
+        <IonItem>
+            <IonAvatar slot="start">
+                <IonIcon icon={personCircle}></IonIcon>
+            </IonAvatar>
+            <IonLabel>
+                <h2>Anderson Laverde</h2>
+                <h3>Soy divertido</h3>
+                <p>Me gusta Escuchar música todo el tiempo</p>
+            </IonLabel>
+        </IonItem>
+        <IonItem>
+            <IonAvatar slot="start">
+                <IonIcon icon={personCircle}></IonIcon>
+            </IonAvatar>
+            <IonLabel>
+                <h2>Santiago Coca</h2>
+                <h3>Soy divertido</h3>
+                <p>Me gusta Escuchar música todo el tiempo</p>
             </IonLabel>
         </IonItem>
     </IonList>

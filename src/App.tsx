@@ -44,6 +44,7 @@ const App: React.FC = () => (
         <Route path="/people" component={Friends} exact={true} />
         <Route path="/principal" component={Principal} exact={true} />
         <Route path="/chat" component={Chat} exact={true} />
+        <Route path="/friends" component={Friends} exact={true} />
         <Route exact path="/" render={() => <Redirect to="/home" />} />
       </IonRouterOutlet>
     </IonReactRouter>
