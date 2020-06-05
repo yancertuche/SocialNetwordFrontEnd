@@ -15,7 +15,7 @@ const CardPublication: React.FC = () => {
   return (
         <IonCard>
         <IonCardHeader>
-            <IonSegment color="tertiary" value="favorite" >
+            <IonSegment  value="favorite" >
                 <IonSegmentButton value="add" onClick={() => HandleModal()}>
                     <IonLabel>Agregar</IonLabel>
                     <IonIcon icon={add}></IonIcon>

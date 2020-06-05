@@ -10,7 +10,7 @@ const Friends: React.FC = () => {
             <MenuSegment></MenuSegment>
             </IonToolbar>
           </IonHeader>
-          <IonContent>
+          <IonContent >
             <FriendsList></FriendsList>
           </IonContent>
         </IonPage>

@@ -2,6 +2,7 @@ import React from 'react';
 import {  IonList, IonItem,IonIcon,IonLabel, IonListHeader, IonAvatar} from '@ionic/react';
 import { home, addCircle, people,chatbox, arrowForward, personCircle} from 'ionicons/icons';
 import {useHistory} from 'react-router';
+import imagen from '../images/persona1.png'
 
 const FriendsList: React.FC = () => {
     return (
@@ -11,7 +12,7 @@ const FriendsList: React.FC = () => {
         </IonListHeader>
         <IonItem>
             <IonAvatar slot="start">
-                <IonIcon icon={personCircle}></IonIcon>
+                <img src = {imagen} alt = 'persona' />
             </IonAvatar>
             <IonLabel>
                 <h2>Yan Carlos Certuche</h2>
@@ -21,7 +22,7 @@ const FriendsList: React.FC = () => {
         </IonItem>
         <IonItem>
             <IonAvatar slot="start">
-                <IonIcon icon={personCircle}></IonIcon>
+            <img src = {imagen} alt = 'persona' />  
             </IonAvatar>
             <IonLabel>
                 <h2>Anderson Laverde</h2>
@@ -31,7 +32,7 @@ const FriendsList: React.FC = () => {
         </IonItem>
         <IonItem>
             <IonAvatar slot="start">
-                <IonIcon icon={personCircle}></IonIcon>
+            <img src = {imagen} alt = 'persona' />
             </IonAvatar>
             <IonLabel>
                 <h2>Santiago Coca</h2>
@@ -41,7 +42,7 @@ const FriendsList: React.FC = () => {
         </IonItem>
         <IonItem>
             <IonAvatar slot="start">
-                <IonIcon icon={personCircle}></IonIcon>
+            <img src = {imagen} alt = 'persona' />
             </IonAvatar>
             <IonLabel>
                 <h2>Yan Carlos Certuche</h2>
@@ -51,7 +52,7 @@ const FriendsList: React.FC = () => {
         </IonItem>
         <IonItem>
             <IonAvatar slot="start">
-                <IonIcon icon={personCircle}></IonIcon>
+            <img src = {imagen} alt = 'persona' />
             </IonAvatar>
             <IonLabel>
                 <h2>Anderson Laverde</h2>
@@ -61,7 +62,7 @@ const FriendsList: React.FC = () => {
         </IonItem>
         <IonItem>
             <IonAvatar slot="start">
-                <IonIcon icon={personCircle}></IonIcon>
+            <img src = {imagen} alt = 'persona' />
             </IonAvatar>
             <IonLabel>
                 <h2>Santiago Coca</h2>
@@ -71,7 +72,7 @@ const FriendsList: React.FC = () => {
         </IonItem>
         <IonItem>
             <IonAvatar slot="start">
-                <IonIcon icon={personCircle}></IonIcon>
+            <img src = {imagen} alt = 'persona' />
             </IonAvatar>
             <IonLabel>
                 <h2>Yan Carlos Certuche</h2>
@@ -81,7 +82,7 @@ const FriendsList: React.FC = () => {
         </IonItem>
         <IonItem>
             <IonAvatar slot="start">
-                <IonIcon icon={personCircle}></IonIcon>
+            <img src = {imagen} alt = 'persona' />
             </IonAvatar>
             <IonLabel>
                 <h2>Anderson Laverde</h2>
@@ -91,7 +92,7 @@ const FriendsList: React.FC = () => {
         </IonItem>
         <IonItem>
             <IonAvatar slot="start">
-                <IonIcon icon={personCircle}></IonIcon>
+            <img src = {imagen} alt = 'persona' />
             </IonAvatar>
             <IonLabel>
                 <h2>Santiago Coca</h2>

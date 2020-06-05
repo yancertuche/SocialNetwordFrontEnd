@@ -1,6 +1,6 @@
 import React , { useState } from 'react';
-import {IonSegment, IonSegmentButton, IonIcon,  IonPopover, IonList, IonItem } from '@ionic/react';
-import { notifications, chatbox, people,addCircle,home } from 'ionicons/icons';
+import {IonSegment, IonSegmentButton, IonIcon,  IonPopover, IonList, IonItem, IonText } from '@ionic/react';
+import { notifications, chatbox, people,addCircle,home , happy, sad , hammerOutline} from 'ionicons/icons';
 import {useHistory} from 'react-router';
 
 const MenuSegment: React.FC = () => {
@@ -17,19 +17,22 @@ const MenuSegment: React.FC = () => {
   const [showPopover, setShowPopover] = useState(false);
 
   return (
-          <IonSegment onIonChange={e => Principal( e.detail.value)}  >
+          <IonSegment onIonChange={e => Principal( e.detail.value)}>
             <IonSegmentButton  value="notification1">
               <IonIcon icon={notifications} />
               <IonPopover isOpen={showPopover} onDidDismiss={e => setShowPopover(false)}>
                 <IonList>
                   <IonItem>
-                    <p>Notificación 1</p>
+                    <IonText>Ibrahim ha reaccionado a tu post</IonText>
+                    <IonIcon icon={happy}></IonIcon>
                   </IonItem>
                   <IonItem>
-                    <p>Notificación 2</p>
+                  <IonText>Daniela ha reaccionado a tu post</IonText>
+                    <IonIcon icon={sad}></IonIcon>
                   </IonItem>
                   <IonItem>
-                    <p>Notificación 3</p>
+                  <IonText>Tatiana ha comentado en el grupo de matemática</IonText>
+                    <IonIcon icon={hammerOutline}></IonIcon>
                   </IonItem>
                 </IonList>
               </IonPopover>
@@ -43,7 +46,7 @@ const MenuSegment: React.FC = () => {
             <IonSegmentButton value="feed">
               <IonIcon icon={addCircle} />
             </IonSegmentButton>
-            <IonSegmentButton value="home">
+            <IonSegmentButton value="principal">
               <IonIcon icon={home} />
             </IonSegmentButton>
           </IonSegment>

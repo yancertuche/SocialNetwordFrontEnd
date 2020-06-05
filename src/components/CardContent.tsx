@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonSegment, IonSegmentButton, IonLabel, IonIcon, IonToast, IonActionSheet, IonTabBar, IonTab, IonTabs, IonTabButton } from '@ionic/react';
 import { happy, sad, chatbubbleEllipses} from 'ionicons/icons';
-import imagen from '../images/EscudoCentral.png'
+import imagen from '../images/demos.png'
 
 const CardContent: React.FC = () => {
     const [showToast1, setShowToast1] = useState(false);
@@ -14,10 +14,10 @@ const CardContent: React.FC = () => {
     }
   return (
         <IonCard>
-        <IonCardContent>
+        <IonCardContent >
             Un buen ejemplo de demostración
+            <img  src={imagen} alt='logo' />
         </IonCardContent>
-        <img src={imagen} alt='logo' />
         <IonSegment  value="reactions" >
                 <IonSegmentButton value="like" >
                     <IonIcon icon={happy}></IonIcon>

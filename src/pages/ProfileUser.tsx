@@ -9,7 +9,7 @@ const ProfileUser: React.FC = () => {
             <MenuSegment></MenuSegment>
             </IonToolbar>
           </IonHeader>
-          <IonContent>
+          <IonContent >
             perfil de Usuario
           </IonContent>
         </IonPage>

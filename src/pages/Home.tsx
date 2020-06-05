@@ -25,7 +25,7 @@ const Home: React.FC = () => {
             <IonTitle size="large">JaveRed</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonContent>
+        <IonContent  >
           <FormLogin></FormLogin>
         </IonContent>
       </IonPage>

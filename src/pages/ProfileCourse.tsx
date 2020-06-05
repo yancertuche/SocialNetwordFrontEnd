@@ -10,7 +10,7 @@ const ProfileCourse: React.FC = () => {
               <MenuSegment></MenuSegment>
             </IonToolbar>
           </IonHeader>
-          <IonContent>
+          <IonContent >
             Perfil del curso
           </IonContent>
         </IonPage>

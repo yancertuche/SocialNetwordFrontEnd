@@ -26,7 +26,7 @@ const Feed: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <SearchBar></SearchBar>
-        <IonContent>
+        <IonContent >
           <IonRefresher slot="fixed" onIonRefresh={doRefresh}>
             <IonRefresherContent
               pullingIcon={chevronDownCircleOutline}

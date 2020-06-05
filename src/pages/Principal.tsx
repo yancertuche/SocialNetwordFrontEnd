@@ -12,6 +12,10 @@ const Principal: React.FC = () => {
           </IonHeader>
           <IonContent>
             <CardContent></CardContent>
+            <CardContent></CardContent>
+            <CardContent></CardContent>
+            <CardContent></CardContent>
+            <CardContent></CardContent>
           </IonContent>
         </IonPage>
     );
